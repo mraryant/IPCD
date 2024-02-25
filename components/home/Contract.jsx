@@ -20,43 +20,18 @@ const Contract = () => {
     };
 
 
-    const [tooltipVisible, setTooltipVisible] = useState(false);
 
-    const handleMouseEnter = () => {
-        setTooltipVisible(true);
-    };
-
-    const handleMouseLeave = () => {
-        setTooltipVisible(false);
-    };
 
     return (
         <>
-            <button
-                type="button"
-                className="ms-3 mb-2 md:mb-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-            >
-                Tooltip right
-            </button>
 
-            <div
-                id="tooltip-right"
-                role="tooltip"
-                className={`absolute z-10 ${tooltipVisible ? 'visible' : 'invisible'
-                    } inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm   tooltip dark:bg-gray-700`}
-            >
-                Tooltip on right
-                <div className="tooltip-arrow" data-popper-arrow></div>
-            </div>
 
-            <div id="contract1" className=" ">
+            <div id="contract1" className=" z-0 ">
                 {/* <div className="shadow"></div>
         <div className="shadow2"></div> */}
 
                 <div id="contract">
-                    <h5 className=" text-[var(--prime-yellow)]  font-['Oxanium'] text-3xl">Contract Address</h5>
+                    <h5 className=" text-[var(--prime-yellow)]  oxanium text-3xl">Contract Address</h5>
                     <h3 style={{ color: "white" }}>{text}</h3>
 
 

@@ -39,7 +39,7 @@ body {
 
 /* Style the scrollbar handle or thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #666; /* Adjust the color on hover as needed */
+  background-color: #3f3f3f; /* Adjust the color on hover as needed */
 }
 
 /* Style the scrollbar corner */
@@ -171,7 +171,7 @@ body {
 /* contract  css */
 
 #contract1 {
-  height: 60vh;
+  min-height: 30vh;
   width: 100vw;
   display: flex;
 
@@ -183,7 +183,7 @@ body {
 }
 #contract {
   margin-top: 3vmax;
-  margin-bottom: 6vmax;
+  margin-bottom: 3vmax;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -195,7 +195,7 @@ body {
 }
 #contract > h3 {
   z-index: 1;
-  font-size: 1.7vmax;
+  font-size: 1.9vmax;
 }
 #contract-button {
   z-index: 1;
@@ -215,4 +215,41 @@ body {
   width: 100%;
   height: fit-content;
   z-index: 1;
+}
+
+.oxanium {
+  font-family: var(--font-oxanium);
+}
+
+/* roadmap scrollbar styling  */
+
+#rc-right::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Style the scrollbar handle or thumb */
+#rc-right::-webkit-scrollbar-thumb {
+  background-color: #333; /* Adjust the color as needed for your dark theme */
+  border-radius: 50px;
+}
+
+/* Style the scrollbar track on hover */
+#rc-right::-webkit-scrollbar-track:hover {
+  background-color: #636262; /* Adjust the color on hover as needed */
+}
+
+/* Style the scrollbar handle or thumb on hover */
+#rc-right::-webkit-scrollbar-thumb:hover {
+  background-color: #3d3d3d; /* Adjust the color on hover as needed */
+}
+
+/* Style the scrollbar corner */
+#rc-right::-webkit-scrollbar-corner {
+  background-color: #111; /* Adjust the color as needed for your dark theme */
+}
+.text-gradient {
+  background: linear-gradient(to right, #ffad62, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
