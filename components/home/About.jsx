@@ -1,8 +1,21 @@
 'use client'
 import React from 'react'
 import Image from "next/image";
-
+import { motion } from "framer-motion"
 const About = () => {
+    const staggerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.2, ease: "easeInOut" }, // Move ease property here
+        },
+    };
+
+    const childVariants = {
+        hidden: { opacity: 0, x: 30 },
+        visible: { opacity: 1, x: 0 },
+    };
+
     return (
         <>
             {/* bg-[url('/assets/aboutbg.svg')] */}
@@ -25,23 +38,34 @@ const About = () => {
                     <div className='w-[100%] flex flex-col justify-center gap-[20px]'>
                         <div>
                             <h3 className=' text-[var(--prime-yellow)] text-2xl '>ABOUT US</h3>
-                            <h1 className='text-5xl oxanium '>Do You Know <span className='text-[var(--prime-yellow)]' >?</span></h1>
+                            <motion.h1
+                                initial={{ x: 0 }}
+                                whileInView={{ x: [0, -10, 10, -10, 10, 0], transition: { duration: 0.5 }, }}
+                                whileHover={{ x: [0, -20, 10, -10, 10, 0], transition: { duration: 0.5 }, }}
+                                className='text-5xl oxanium '>Do You Know <span className='text-[var(--prime-yellow)]' >?</span></motion.h1>
                         </div>
                         <p className='text-xl leading-tight'>IPCD, a century-old institution, is a beacon of transformation in organizational dynamics, steadfastly partnering with organizations to elevate their people functions and champion better work and working lives.     </p>
-                        <ul className='flex flex-col gap-[20px] w-[85%] max-[850px]:w-[100%] leading-tight'>
-                            <li>
+
+                        <motion.ul
+                            variants={staggerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+
+
+                            className='flex flex-col gap-[20px] w-[85%] max-[850px]:w-[100%] leading-tight'>
+                            <motion.li variants={childVariants}>
                                 IPCD fosters collaborative growth and excellence, serving as a trusted partner with insights to catalyze positive change in human resources, learning, and organizational development.
-                            </li>
-                            <li>
+                            </motion.li>
+                            <motion.li variants={childVariants}>
                                 Rooted in a shared vision, IPCD's partnerships go beyond transactions, envisioning a future where work brings fulfillment and productivity, co-creating impact within and beyond the workplace.
-                            </li>
-                            <li>
+                            </motion.li>
+                            <motion.li variants={childVariants}>
                                 IPCD collaborates to understand organizational challenges, crafting tailored strategies aligning people functions with business objectives, guiding leaders through the complexities of the contemporary workplace.
-                            </li>
-                            <li>
+                            </motion.li>
+                            <motion.li variants={childVariants}>
                                 Beyond consultation, IPCD implements transformative practices, providing tools and resources to professionalize people functions, ensuring organizations navigate the dynamic HR landscape with agility and foresight.
-                            </li>
-                        </ul>
+                            </motion.li>
+                        </motion.ul>
                     </div>
                 </div>
             </div>
