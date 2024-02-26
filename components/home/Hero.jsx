@@ -100,7 +100,7 @@ const Hero = () => {
               <h1 className=" font-bold text-5xl text-stroke rotate-[-90deg] ml-[-15px] max-[760px]:hidden  ">IPCD</h1>
             </div>
             <div id="hero-l-bottom-right" className="flex flex-col justify-center   gap-3 max-[760px]:ml-[0px]">
-              <h2 className="text-2xl max-[468px]:text-center">INSTITUTE OF PERSONNEL AND CORPORATE DEVELOPMENT</h2>
+              {/* <h2 className="text-2xl max-[468px]:text-center">INSTITUTE OF PERSONNEL AND CORPORATE DEVELOPMENT</h2> */}
               <motion.div
                 initial="hidden"
                 transition={{ ease: "easeInOut" }}
