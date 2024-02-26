@@ -7,13 +7,13 @@ const About = () => {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            transition: { staggerChildren: 0.2, ease: "easeInOut" }, // Move ease property here
+            transition: { staggerChildren: 0.2, ease: "easeOut" },
         },
     };
 
     const childVariants = {
-        hidden: { opacity: 0, x: 30 },
-        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: 40 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut" } },
     };
 
     return (

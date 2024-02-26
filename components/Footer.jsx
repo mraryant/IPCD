@@ -24,30 +24,30 @@ const Footer = () => {
 
               <div className="px-4 my-4 w-full sm:w-auto">
                 <div>
-                  <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-[var(--prime-yellow)]">Company</h2>
+                  <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-[var(--prime-yellow)] oxanium">Company</h2>
                 </div>
                 <ul className="leading-8">
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">About Us</a></li>
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">Terms &amp; Conditions</a></li>
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">Contact Us</a></li>
+                  <li><a href="#about-main" className="hover:text-[var(--prime-yellow)]">About Us</a></li>
+                  {/* <li><a href="#" className="hover:text-[var(--prime-yellow)]">Terms &amp; Conditions</a></li> */}
+                  {/* <li><a href="#" className="hover:text-[var(--prime-yellow)]">Privacy Policy</a></li> */}
+                  <li><a href="#hero-right" className="hover:text-[var(--prime-yellow)]">Contact Us</a></li>
                 </ul>
               </div>
               <div className="px-4 my-4 w-full sm:w-auto">
                 <div>
-                  <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-[var(--prime-yellow)]">Blog</h2>
+                  <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-[var(--prime-yellow)] oxanium ">Importent Links</h2>
                 </div>
                 <ul className="leading-8">
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">Getting Started With HTML and CSS</a></li>
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">What Is Flex And When to Use It?</a></li>
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">How TailwindCSS Can Help Your Productivity?</a></li>
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">5 Tips to Make Responsive Website</a></li>
-                  <li><a href="#" className="hover:text-[var(--prime-yellow)]">See More</a></li>
+                  <li><a href="#hero-main" className="hover:text-[var(--prime-yellow)]">Home</a></li>
+                  <li><a href="#contract1" className="hover:text-[var(--prime-yellow)]">Contract Address</a></li>
+                  <li><a href="#Usecase-main" className="hover:text-[var(--prime-yellow)]">Use Case</a></li>
+                  <li><a href="#toko-main" className="hover:text-[var(--prime-yellow)]">Tokenomics</a></li>
+                  <li><a href="#listing" className="hover:text-[var(--prime-yellow)]">Listing</a></li>
                 </ul>
               </div>
               <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
                 <div>
-                  <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-[var(--prime-yellow)]">Connect With Us</h2>
+                  <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-[var(--prime-yellow)] oxanium ">Connect With Us</h2>
                 </div>
                 <a href="#" className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-[var(--prime-yellow)] hover:border-[var(--prime-yellow)]">
                   <svg className="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -81,7 +81,7 @@ const Footer = () => {
         <div className="bg-black py-4 px-10 text-gray-100">
           <div className="container mx-auto px-4">
             <div className="-mx-4 flex flex-wrap justify-between">
-              <div className="px-4 w-full text-center sm:w-auto sm:text-left">
+              <div className="px-4 w-full text-center sm:w-auto sm:text-left oxanium">
                 Copyright © 2023
                 - 2024
                 . All Rights Reserved.

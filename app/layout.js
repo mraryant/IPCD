@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${oxanium.variable} ${montserrat.variable}`} >
 
-        <Headroom>
+        <Headroom style={{ zIndex: 99 }}>
           <Navbar />
         </Headroom>
         {children}

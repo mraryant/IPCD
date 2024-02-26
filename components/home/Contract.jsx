@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion"
+import Image from "next/image";
 
 const Contract = () => {
     const [copied, setCopied] = useState(false);
@@ -31,28 +33,39 @@ const Contract = () => {
         <div className="shadow2"></div> */}
 
                 <div id="contract">
-                    <h5 className=" text-[var(--prime-yellow)]  oxanium text-3xl">Contract Address</h5>
+                    <motion.h5
+                        initial={{ x: 0 }}
+                        whileInView={{ x: [0, -10, 10, -10, 10, 0], transition: { duration: 0.5 }, }}
+                        className=" text-[var(--prime-yellow)]  oxanium text-3xl">Contract Address</motion.h5>
                     <h3 style={{ color: "white" }}>{text}</h3>
 
 
                     <div id="contract-button">
 
-                        <button
+                        <motion.button
+                            initial={{ x: -40 }}
+                            transition={{ duration: 1 }}
+                            whileInView={{ x: 0 }}
                             className="btn "
                             style={{ width: "230px" }}
                             onClick={handleCopy}
                         >
-                            <span>
-                                {/* <img
-                  src={Copy}
-                  style={{ width: 25, height: 25, marginRight: 15 }}
-                  alt=""
-                /> */}
+                            <span className="flex oxanium">
+                                <Image
+                                    src="/assets/copy (1).webp"
+                                    height={25}
+                                    width={25}
+                                    style={{ marginRight: 15 }}
+                                    alt="B"
+                                />
                                 Copy Address
                             </span>
-                        </button>
-                        <button
-                            className="btn"
+                        </motion.button>
+                        <motion.button
+                            initial={{ x: 40 }}
+                            transition={{ duration: 1 }}
+                            whileInView={{ x: 0 }}
+                            className="btn "
                             style={{ width: "230px" }}
                             onClick={() =>
                                 window.open(
@@ -61,15 +74,17 @@ const Contract = () => {
                                 )
                             }
                         >
-                            <span>
-                                {/* <img
-                  src={BSC}
-                  style={{ width: 25, height: 25, marginRight: 15 }}
-                  alt=""
-                /> */}
+                            <span className="flex oxanium">
+                                <Image
+                                    src="/assets/bsc.webp"
+                                    height={25}
+                                    width={25}
+                                    style={{ marginRight: 15 }}
+                                    alt="B"
+                                />
                                 BSC SCAN
                             </span>
-                        </button>
+                        </motion.button>
                     </div>
                     {copied && (
                         <div className="popup mt-3" style={{ zIndex: 1, color: "white" }}>

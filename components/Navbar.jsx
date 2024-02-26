@@ -35,7 +35,7 @@ const Navbar = () => {
           } w-full overflow-x-hidden z-[99] top-0 start-0 border-b border-none dark:border-gray-600`}
       >
         <div className=" max-w-full   flex flex-wrap items-center justify-between mx-auto p-4 px-4 md:p-4 md:px-8">
-          <Link href="https://flowbite.com/">
+          <Link href="#">
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image src="/assets/ipcd-white.png" width={82} height={82} alt="Nhi" />
 
@@ -80,27 +80,27 @@ const Navbar = () => {
                 </Link>
               </li> */}
               <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
-                <Link href="#">
+                <Link href="#hero-main">
                   <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</div>
                 </Link>
               </li>
               <li className='md:border-none border-b-[1px] border-[#F7A00B]'>
-                <Link href="#">
+                <Link href="#about-main">
                   <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</div>
                 </Link>
               </li>
               <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
-                <Link href="#">
+                <Link href="#Usecase-main">
                   <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Use Case</div>
                 </Link>
               </li>
               <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
-                <Link href="#">
+                <Link href="#roadmap-main">
                   <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Roadmap</div>
                 </Link>
               </li>
               <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
-                <Link href="#">
+                <Link href="#toko-main">
                   <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tokenomics</div>
                 </Link>
               </li>

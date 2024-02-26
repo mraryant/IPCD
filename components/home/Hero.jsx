@@ -50,15 +50,13 @@ const Hero = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.3, },
-
+      transition: { staggerChildren: 0.2, ease: "easeOut" },
     },
-
   };
 
   const childVariants = {
     hidden: { opacity: 0, x: -40 },
-    visible: { opacity: 1, x: 0 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut" } },
   };
   return (
     <>

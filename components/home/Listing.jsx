@@ -1,8 +1,43 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
+import { useEffect, useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Listing = () => {
+    // typing effect  p tag
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    const [isVisible, setIsVisible] = useState(false);
+
+    const textVariants = {
+        hidden: { opacity: 0, x: -20 },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                type: '',
+                duration: 0.1,
+                delay: 0.1,
+                ease: 'easeOut',
+                staggerChildren: 0.008, // Adjust the delay between each character
+            },
+        },
+    };
+
+    const charVariants = {
+        hidden: { opacity: 0, x: -10 },
+        visible: { opacity: 1, x: 0 },
+    };
+
+    useEffect(() => {
+        if (inView && !isVisible) {
+            setIsVisible(true);
+            controls.start('visible');
+        }
+    }, [controls, inView, isVisible]);
+
     return (
         <>
             <div id="listing" className=' relative min-h-[100vh] w-[100vw] px-10 py-20   flex flex-col gap-20'>
@@ -14,7 +49,23 @@ const Listing = () => {
                 <div id="Listed-main" className=' flex gap-5  max-[700px]:flex-col max-[700px]:gap-10'>
                     <div id="listed-left" className='max-w-[50%] flex flex-col justify-center gap-[1vmax] max-[700px]:max-w-[100%] ' >
                         <h1 className='oxanium text-5xl'>We Are <span className='text-[var(--prime-yellow)]'>Listed</span>  On</h1>
-                        <p>IPCD aims to redefine people management globally, setting gold standards in HR, learning, and organizational development, with the IPCD Token, grounded in blockchain, as a catalyst for transformative success.</p>
+                        <motion.p
+                            ref={ref}
+                            initial="hidden"
+                            animate={controls}
+                            variants={textVariants}
+                            className='text-xl leading-tight'
+                        // className="leading-tight text-gray-200 text-[18px] w-[80%] tracking-[0.35px] max-[850px]:w-[100%]"
+                        >
+                            {Array.from(
+                                'IPCD aims to redefine people management globally, setting gold standards in HR, learning, and organizational development, with the IPCD Token, grounded in blockchain, as a catalyst for transformative success.'
+                            ).map((char, index) => (
+                                <motion.span key={index} variants={charVariants}>
+                                    {char}
+                                </motion.span>
+                            ))}
+                        </motion.p>
+                        {/* <p>IPCD aims to redefine people management globally, setting gold standards in HR, learning, and organizational development, with the IPCD Token, grounded in blockchain, as a catalyst for transformative success.</p> */}
                     </div>
                     <div id="listed-right" className='flex justify-center max-w-[50%] gap-5 flex-wrap max-[700px]:max-w-[100%]'>
                         <div id="util-card" className='bg-gradient-to-b from-zinc-700 to-neutral-950  h-[45px] w-[250px]  flex gap-5 border-2 px-5 py-2 rounded-[100px]'>
@@ -70,7 +121,22 @@ const Listing = () => {
                     </div>
                     <div id="filler-right" className=' w-[60%] flex flex-col justify-center items-center gap-10 max-[800px]:w-[100%] max-[800px]: '>
                         <h1 className='text-5xl oxanium max-[800px]:text-4xl  '> <span className='text-[var(--prime-yellow)]' >INSTITUTE</span> OF PERSONNEL AND CORPORATE <span className='text-[var(--prime-yellow)]'>DEVELOPMENT</span> </h1>
-                        <p className='text-xl max-[800px]:text-justify'>IPCD envisions a future of holistic well-being, strategic alignment, and innovation in global people management. The IPCD Token symbolizes a secure, borderless, and collaborative approach to reshaping the future of work.</p>
+                        <motion.p
+                            ref={ref}
+                            initial="hidden"
+                            animate={controls}
+                            variants={textVariants}
+                            className="text-xl max-[800px]:text-justify"
+                        >
+                            {Array.from(
+                                'IPCD envisions a future of holistic well-being, strategic alignment, and innovation in global people management. The IPCD Token symbolizes a secure, borderless, and collaborative approach to reshaping the future of work.'
+                            ).map((char, index) => (
+                                <motion.span key={index} variants={charVariants}>
+                                    {char}
+                                </motion.span>
+                            ))}
+                        </motion.p>
+                        {/* <p className='text-xl max-[800px]:text-justify'>IPCD envisions a future of holistic well-being, strategic alignment, and innovation in global people management. The IPCD Token symbolizes a secure, borderless, and collaborative approach to reshaping the future of work.</p> */}
                     </div>
                 </div>
             </div>
