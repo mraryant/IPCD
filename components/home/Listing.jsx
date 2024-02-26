@@ -5,7 +5,12 @@ import React from 'react'
 const Listing = () => {
     return (
         <>
-            <div id="listing" className='  min-h-[100vh] w-[100vw] px-10 py-20   flex flex-col gap-20'>
+            <div id="listing" className=' relative min-h-[100vh] w-[100vw] px-10 py-20   flex flex-col gap-20'>
+
+                <div className="  absolute left-0 top-0 bg-gradient-to-b from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-screen h-[100px]  bottom-0 z-[1] "></div>
+                <div className="  absolute left-0 bottom-0 bg-gradient-to-t from-slate-950 via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-screen h-[100px]  bottom-0 z-[1] "></div>
+
+
                 <div id="Listed-main" className=' flex gap-5  max-[700px]:flex-col max-[700px]:gap-10'>
                     <div id="listed-left" className='max-w-[50%] flex flex-col justify-center gap-[1vmax] max-[700px]:max-w-[100%] ' >
                         <h1 className='oxanium text-5xl'>We Are <span className='text-[var(--prime-yellow)]'>Listed</span>  On</h1>

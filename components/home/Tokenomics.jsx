@@ -4,7 +4,11 @@ import React from 'react'
 const Tokenomics = () => {
     return (
         <>
-            <div id="toko-main" className=' overflow-hidden relative bg-black  flex flex-col gap-[4vmax] min-h-[100vh] w-[100vw] px-10  max-[400px]:px-5      '>
+            <div id="toko-main" className='  overflow-hidden relative bg-black  flex flex-col gap-[4vmax] min-h-[100vh] w-[100vw] px-10  max-[400px]:px-5      '>
+
+                <div className="  absolute left-0 top-0 bg-gradient-to-b from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-screen h-[100px]  bottom-0 z-[1] "></div>
+                <div className="  absolute left-0 bottom-0 bg-gradient-to-t from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-screen h-[100px]  bottom-0 z-[1] "></div>
+
                 <video className=" w-screen  absolute left-0  h-[110%] z-0 object-cover flex  opacity-30 max-[900px]:h-[100%] max-[500px]:h-[100%] " autoPlay muted loop src={require('../../public/assets/tokovideo.mp4')} />
 
                 <div className='py-20 z-[0] flex flex-col gap-10'>
@@ -54,7 +58,7 @@ const Tokenomics = () => {
                                     />
                                 </div>
                             </div>
-                            <h1 className=' text-4xl ml-10 tracking-[1.3vw] oxanium max-[400px]:text-2xl max-[400px]:ml-[0rem]  max-[900px]:tracking-[2.5vw] max-[900px]:text-3xl max-[900px]:ml-[0px] '>DISTRIBUTION</h1>
+                            <h1 className=' gradient-distribution text-4xl ml-10 tracking-[1.3vw] oxanium max-[400px]:text-2xl max-[400px]:ml-[0rem]  max-[900px]:tracking-[2.5vw] max-[900px]:text-3xl max-[900px]:ml-[0px] '>DISTRIBUTION</h1>
                             {/* <h1 className='text-4xl ml-10 tracking-[1.3vw] max-w-[400px]:text-2xl max-w-[400px]:ml-0 max-w-[900px]:tracking-[3vw] max-w-[900px]:text-3xl max-w-[900px]:ml-0'>DISTRIBUTION</h1> */}
 
 

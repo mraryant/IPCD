@@ -253,3 +253,15 @@ body {
   color: transparent;
   display: inline-block;
 }
+
+.gradient-distribution {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(230, 193, 133, 1) 65%
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}

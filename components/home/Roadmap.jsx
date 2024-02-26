@@ -8,15 +8,19 @@ const Roadmap = () => {
 
 
 
-            <div id="roadmap-main" className='reletive flex flex-col    items-center   min-h-[140vh] w-[100vw] '>
+            <div id="roadmap-main" className='relative flex flex-col    items-center   min-h-[140vh] w-[100vw] '>
+
 
 
                 <video className="w-full sticky top-0 h-[120vh] z-[-1] object-cover flex  opacity-50  " autoPlay muted loop src={require('../../public/assets/roadmapvideo.mp4')} />
 
-                <div id="roadmap-cont" className=' w-[100%] min-h-[80vh] gap-20 absolute  left-0  flex flex-col justify-center  '>
-                    <div id="roadmap-heading" className=" sticky h-fit    top-0 flex flex-col gap-2 bg-black md:rounded-b-[100px] py-[1.5vmax] items-center max-[768px]:px-3">
+                <div id="roadmap-cont" className='  w-[100%] min-h-[80vh] gap-20 absolute  left-0  flex flex-col justify-center  '>
+
+                    <div id="roadmap-heading" className=" sticky h-fit    top-0 flex flex-col gap-2 bg-black  py-[1.5vmax] items-center max-[768px]:px-3">
                         <h1 className="text-5xl text-[var(--prime-yellow)] font-['Oxanium'] ">Roadmap</h1>
                         <p className="text-center leading-tight max-w-md mx-auto">We’ll meet you where you’re at – and tailor our approach to suit your strategic aims. We’ll do this using our five-stage model for change:</p>
+                        <div className="  absolute left-0 top-[99%] bg-gradient-to-b from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-screen h-[50px]  bottom-0 z-3"></div>
+
                     </div>
 
                     <div className="flex justify-center max-[768px]:px-5">
