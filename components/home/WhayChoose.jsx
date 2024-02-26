@@ -11,7 +11,7 @@ const WhayChoose = () => {
         <>
             <div id="whayC-main" className=' overflow-hidden min-h-[100vh] bg-[#060606] w-[100vw] flex flex-col justify-center items-center gap-[6vmax]    md:px-[5vmax] md:py-20 max-[834px]:py-10'>
 
-                <h1 className='  text-5xl font-["Oxanium"] max-[576px]:text-[33px] mx-2 '>WHY <span className='text-[var(--prime-yellow)]'> CHOOSE </span> IPCD</h1>
+                <h1 className='  text-5xl oxanium max-[576px]:text-[33px] mx-2 '>WHY <span className='text-[var(--prime-yellow)]'> CHOOSE </span> IPCD</h1>
 
                 <div id="whayC-container" className=' min-h-[80vh] flex gap-[2vmax] px-10 max-[834px]:flex-col'>
                     <div id="whayC-cont-left" className='w-[33%] flex flex-col justify-between items-center gap-[10vmax] max-[834px]:flex-row  max-[834px]:w-[100%] max-[834px]:gap-[7vw] max-[834px]:items-start max-[576px]:flex-col max-[576px]:items-center'>
