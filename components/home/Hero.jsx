@@ -58,6 +58,13 @@ const Hero = () => {
     hidden: { opacity: 0, x: -40 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut" } },
   };
+
+
+  const openPDF = () => {
+    // Use the `router` from Next.js to open the PDF
+    window.open('/assets/IPCD whitepaper.pdf', '_blank');
+  };
+
   return (
     <>
       <motion.div id="hero-main" className=" overflow-hidden relative min-h-[100vh] w-[100vw] flex justify-center items-center px-4 mt-[-88px] pb-20 md:px-8 max-[768px]:flex-col">
@@ -107,10 +114,8 @@ const Hero = () => {
 
                 id="hero-bottom-buttons" className="flex  gap-4 max-[480px]:flex-wrap max-[468px]:justify-center ">
                 <motion.button variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy Token</motion.button>
-                <motion.button variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">White Paper  </motion.button>
-                <motion.button variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  max-[468px]:hidden">Contract</motion.button>
-
-
+                <motion.button onClick={openPDF} variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">White Paper</motion.button>
+                <motion.a href="#contract1" variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  max-[468px]:hidden">Contract</motion.a>
 
               </motion.div>
             </div>

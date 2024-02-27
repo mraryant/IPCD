@@ -1,11 +1,8 @@
-'use client'
 
+// import Navbar from "@/components/Navbar";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Image from 'next/image'
-import Headroom from "react-headroom";
 import { Oxanium, Montserrat } from 'next/font/google';
+// import Headroom from "react-headroom";
 
 const oxanium = Oxanium({
   subsets: ['latin'],
@@ -21,16 +18,16 @@ const montserrat = Montserrat({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
-// ...
+export const metadata = {
+  title: "IPCD",
+  description: "INSTITUTE OF PERSONNEL AND CORPORATE DEVELOPMENT",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${oxanium.variable} ${montserrat.variable}`} >
 
-        <Headroom style={{ zIndex: 99 }}>
-          <Navbar />
-        </Headroom>
         {children}
 
       </body>

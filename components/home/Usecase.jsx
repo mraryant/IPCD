@@ -46,6 +46,7 @@ const Usecase = () => {
                     <motion.div
                         initial='hidden'
                         whileInView='visible'
+
                         variants={staggerVariants}
 
                         id="usecase-left" className='w-[50%] flex flex-col gap-7 justify-center items-center relative max-[1000px]:w-[90%]'>

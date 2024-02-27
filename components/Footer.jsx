@@ -17,7 +17,7 @@ const Footer = () => {
                     alt='Logo'
                   />
                 </a>
-                <p className="text-justify">
+                <p className=" ">
                   The IPCD Utility Token, with its dynamic Profession Map, redefines accreditation and certification, setting global standards for excellence in people management through innovation, collaboration, and transformative change.
                 </p>
               </div>
