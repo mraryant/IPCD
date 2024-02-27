@@ -7,14 +7,17 @@ const Usecase = () => {
     const [tooltipVisible, setTooltipVisible] = useState(true);
     const [tooltipImage, setTooltipImage] = useState("/assets/usecaseDefault.svg");
 
+
     const handleMouseEnter = (image) => {
+
         setTooltipVisible(true);
         setTooltipImage(image);
     };
 
     const handleMouseLeave = () => {
-        setTooltipVisible(true);
+
         setTooltipImage("/assets/usecaseDefault.svg");
+        setTooltipVisible(true);
     };
 
 
@@ -94,7 +97,11 @@ const Usecase = () => {
 
                     <div id="usecase-right" className=" overflow-hidden flex justify-center items-center  h-[100%] object-fill ">
 
-                        <div
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            transition={{ ease: "easeInOut", duration: 0.5, }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+
                             id="tooltip-right"
                             role="tooltip"
                             className={`  ${tooltipVisible ? 'visible' : 'invisible'} bg-cover flex justify-center items-center  overflow-hidden max-w-[100%] max-h-[100%]  px-3 py-2     text-white        `}
@@ -106,7 +113,8 @@ const Usecase = () => {
                                 height={500}
                                 alt="Picture of the author"
                             />
-                        </div>
+
+                        </motion.div>
 
                     </div>
                 </div>
