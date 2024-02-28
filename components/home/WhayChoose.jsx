@@ -21,7 +21,7 @@ const WhayChoose = () => {
 
                             className='flex flex-col gap-3 w-[90%] max-[576px]:w-[100%]  '>
                             <h2 className=" oxanium text-2xl leading-tight"> <span className=' text-[var(--prime-yellow)]'>Elevating</span> Excellence in People Management</h2>
-                            <p className=' leading-tight   text-wrap  '>In a critical landscape where effective people management defines success, IPCD is the preferred partner for over 320 global organizations, embodying a commitment to excellence in human resources, learning and development, and organizational growth.</p>
+                            <p className=' leading-tight   text-wrap  '>In a critical landscape where effective people management defines success, partnering with IPCD will guide you through a five-stage model (Define- Diagnose-Build-Recognize-Sustain) for successful transformation, ensuring a dedication to excellence in human resources, learning and development, and organizational growth.  </p>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, x: -30, y: 30 }}
@@ -29,16 +29,16 @@ const WhayChoose = () => {
 
 
                             className='flex flex-col gap-3 w-[90%] max-[576px]:w-[100%]'>
-                            <h2 className=" oxanium text-2xl leading-tight"> <span className='text-[var(--prime-yellow)]'>IPCD</span> as the  <span className='text-[var(--prime-yellow)]'>Partner</span> Partner of Choice for Over 320 Organizations</h2>
-                            <p className=' leading-tight   text-wrap  '>IPCD, chosen by 320+ organizations, signifies trust, offering tailored interventions and collaborative spirit, fostering shared ownership for excellence in people management across diverse sectors and geographies.</p>
+                            <h2 className=" oxanium text-2xl leading-tight"> <span className='text-[var(--prime-yellow)]'>Comprehensive</span>  Corporate & University   <span className='text-[var(--prime-yellow)]'>Rating System</span>  </h2>
+                            <p className=' leading-tight   text-wrap  '>IPCD has devised a comprehensive corporate assessment system designed to evaluate all the components of a company that significantly influence your career success and also incorporates a university rating system, assisting students and working professionals and selecting the best universities that align with their profiles or interests. </p>
                         </motion.div>
 
                     </div>
 
-                    <motion.div
+                    <motion.div id="whayC-cont-mid"
                         initial={{ scale: 1.9 }}
                         whileInView={{ scale: 1, transition: { delay: 0.4, duration: 1 }, }}
-                        id="whayC-cont-mid" className='w-[30%] overflow-hidden flex max-[834px]:w-[100%] '>
+                         className='w-[30%] overflow-hidden flex max-[834px]:w-[100%] '>
                         <video className="    filter grayscale  scale-[2.2] max-[834px]:scale-[1.2] " autoPlay muted loop src={require('../../public/assets/whayCvid.mp4')} />
 
                     </motion.div>
@@ -49,8 +49,8 @@ const WhayChoose = () => {
                             whileInView={{ opacity: 1, x: 0, y: 0, transition: { ease: "easeInOut", delay: 0.4, duration: 1 } }}
 
                             className='flex flex-col gap-3 w-[90%] max-[576px]:w-[100%]'>
-                            <h2 className=" oxanium text-2xl leading-tight"> <span className='text-[var(--prime-yellow)]'>Building</span>  a Global <span className='text-[var(--prime-yellow)]'>Network</span>  of Over 160,000 Members</h2>
-                            <p className=' leading-tight   text-wrap  '>IPCD's global network of 160,000 members creates a dynamic ecosystem for excellence in people management, fostering collaboration and knowledge exchange across diverse boundaries.</p>
+                            <h2 className=" oxanium text-2xl leading-tight"> <span className='text-[var(--prime-yellow)]'>Comprehensive</span>  Corporate & University   <span className='text-[var(--prime-yellow)]'>Rating System</span>  </h2>
+                            <p className=' leading-tight   text-wrap  '>IPCD has devised a comprehensive corporate assessment system designed to evaluate all the components of a company that significantly influence your career success and also incorporates a university rating system, assisting students and working professionals and selecting the best universities that align with their profiles or interests. </p>
                         </motion.div>
 
                         <motion.div

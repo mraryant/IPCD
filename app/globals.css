@@ -11,6 +11,8 @@
 
 :root {
   --prime-yellow: #f8a00a;
+  --curve-size: 1em;
+  --curve-size2: 5em;
 }
 
 body {
@@ -71,7 +73,7 @@ body {
 .btn {
   --border-color: linear-gradient(-45deg, #ffcb72, #ba7807, #f7a00b);
   --border-width: 0.125em;
-  --curve-size: 1em;
+
   --blur: 30px;
   --bg: #080312;
   --color: #afffff;
@@ -279,4 +281,57 @@ body {
 /* Additional styling for other browsers */
 ::-moz-selection {
   color: rgb(255, 255, 0);
+}
+
+/* // popup 1  */
+#wa-popup::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #efebe400;
+  border-right: 20px solid #ffffff; /*act*/
+  border-bottom: 15px solid #c2a77800;
+  border-left: 0px solid #d18706;
+  top: 46%;
+  left: -20px;
+}
+#wa-popup {
+  height: 370px;
+
+  background-color: white;
+  color: black;
+  display: flex;
+  overflow: auto;
+  padding: 20px;
+
+  border-radius: 15px;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  #wa-popup::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #d8890000;
+    border-bottom: 20px solid #ffffff; /*act*/
+    border-right: 15px solid #ffffff00;
+    border-left: 15px solid #d1870600;
+    top: -14px;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  #wa-popup {
+    height: 370px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    overflow: auto;
+    padding: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    flex-direction: column;
+  }
 }

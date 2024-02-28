@@ -44,7 +44,7 @@ const About = () => {
                                 whileHover={{ x: [0, -20, 10, -10, 10, 0], transition: { duration: 0.5 }, }}
                                 className='text-5xl oxanium '>Do You Know <span className='text-[var(--prime-yellow)]' >?</span></motion.h1>
                         </div>
-                        <p className='text-xl leading-tight'>IPCD, a century-old institution, is a beacon of transformation in organizational dynamics, steadfastly partnering with organizations to elevate their people functions and champion better work and working lives.     </p>
+                        <p className='text-xl leading-tight'> IPCD, a century innovative institution, is a beacon of transformation in organizational dynamics, steadfastly partnering with organizations to elevate their people functions and champion better work and working lives.     </p>
 
                         <motion.ul
                             variants={staggerVariants}

@@ -7,6 +7,7 @@ import { useAnimate, stagger } from "framer-motion"
 import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Popup1 from "../popup1";
 
 
 
@@ -65,6 +66,23 @@ const Hero = () => {
     window.open('/assets/IPCD whitepaper.pdf', '_blank');
   };
 
+  const [popup, setpopup] = useState('false');
+
+  useEffect(() => {
+    setTimeout(() => {
+      setpopup('True')
+    }, 5000);
+  }, []);
+
+  const handlepopup = (state) => {
+    if (state === 'true') {
+      setpopup('false')
+    }
+    else {
+      setpopup('true');
+    }
+  }
+
   return (
     <>
       <motion.div id="hero-main" className=" overflow-hidden relative min-h-[100vh] w-[100vw] flex justify-center items-center px-4 mt-[-88px] pb-20 md:px-8 max-[768px]:flex-col">
@@ -81,9 +99,12 @@ const Hero = () => {
               initial={{ x: 0 }}
               whileInView={{ x: [0, -10, 10, -10, 10, 0], transition: { duration: 0.5 }, }}
 
-              className=" text-[4vmax]   oxanium leading-tight max-[850px]:text-[6vmax]   "> <span className=" text-[--prime-yellow]">INSTITUTE</span>  OF PERSONNEL AND CORPORATE DEVELOPMENT</motion.h1>
-            {/* <p className=" leading-tight  text-gray-200 text-[18px] w-[80%] tracking-[0.35px] max-[850px]:w-[100%]  "  >The IPCD envisions a world where work fosters human flourishing, not just a means to an end. It aims to professionalize people teams, positioning them as catalysts for societal change. The mission is to enhance effectiveness and recognition in the realm of personnel and corporate development.</p> */}
+              className=" text-[4vmax] relative  oxanium leading-tight max-[850px]:text-[6vmax]   "> <span className=" text-[--prime-yellow]">INSTITUTE</span>  OF PERSONNEL AND CORPORATE DEVELOPMENT</motion.h1>
+
+
+
             <motion.p
+
               ref={ref}
               initial="hidden"
               animate={controls}
@@ -91,13 +112,19 @@ const Hero = () => {
               className="leading-tight text-gray-200 text-[18px] w-[80%] tracking-[0.35px] max-[850px]:w-[100%]"
             >
               {Array.from(
-                'The IPCD envisions a world where work fosters human flourishing, not just a means to an end. It aims to professionalize people teams, positioning them as catalysts for societal change. The mission is to enhance effectiveness and recognition in the realm of personnel and corporate development.'
+                `The IPCD envisions a world where work fosters human flourishing, not just a means to an end. It aims to professionalize people teams, positioning them as catalysts for societal change. The mission is to enhance effectiveness and recognition in the realm of personnel and corporate development. `
               ).map((char, index) => (
                 <motion.span key={index} variants={charVariants}>
                   {char}
                 </motion.span>
               ))}
             </motion.p>
+            <div className=" relative">
+              <div style={{ display: popup === 'false' ? 'block' : 'none' }} className="  absolute z-10 top-[48%] left-[45%] transform -translate-x-1/2 -translate-y-1/2   max-w-[700px] max-[768px]:w-[90%] max-[768px]:top-[160%]  max-[768px]:transform max-[768px]:-translate-x-0 max-[768px]:-translate-y-0 max-[768px]:left-0" >
+                <Popup1 />
+              </div>
+              <span onClick={() => { handlepopup(popup) }} className=" text-blue-400 cursor-pointer "> READ MORE</span>
+            </div>
           </div>
 
           <div id="hero-left-bottom" className="flex ">

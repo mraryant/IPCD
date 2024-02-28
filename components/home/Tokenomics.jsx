@@ -127,12 +127,12 @@ const Tokenomics = () => {
                                     <h4 className="pl-1 ">10 Billion</h4>
                                 </motion.div>
                                 <motion.div variants={childVariantsutil} id="util-card" className='bg-gradient-to-b from-zinc-700 to-neutral-950 flex gap-5 border-2 px-5 py-2 rounded-[100px]'>
-                                    <h4 className=" ">Token Type</h4>
-                                    <h4 className="pl-2 ">Utility Token</h4>
+                                    <h4 className=" ">Decimal</h4>
+                                    <h4 className="pl-9 ">18</h4>
                                 </motion.div>
                                 <motion.div variants={childVariantsutil} id="util-card" className='bg-gradient-to-b from-zinc-700 to-neutral-950 flex gap-5 border-2 px-5 py-2 rounded-[100px]'>
-                                    <h4 className=" ">Blockchain</h4>
-                                    <h4 className=" pl-3">BEP 20</h4>
+                                    <h4 className=" ">Network</h4>
+                                    <h4 className=" pl-8">BEP 20</h4>
                                 </motion.div>
                             </motion.div>
 
