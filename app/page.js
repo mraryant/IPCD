@@ -20,10 +20,10 @@ export default function Home() {
         <Navbar />
       </Headroom>
       <Hero />
-      {/* <About /> */}
-      {/* <WhayChoose /> */}
-      {/* <Contract /> */}
-      {/* <Usecase /> */}
+      <About />
+      <WhayChoose />
+      <Contract />
+      <Usecase />
       <Roadmap />
       <Benifits />
       <Footer />
