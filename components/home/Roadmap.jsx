@@ -90,7 +90,7 @@ const Roadmap = () => {
                         </div>
                         <div className="flex w-full flex-col justify-between p-4 leading-normal gap-2">
 
-                            <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> CSR </h5>
+                            <h5 className="mb-2 text-3xl font-bold tracking-tight   text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> CSR </h5>
                             <p className=' leading-tight' > {"➣"} Collaborating with local educational institutions and industry partners to create apprenticeship opportunities for hands-on skill development.</p>
 
                             <p className=' leading-tight' > {"➣"} Offering scholarships or financial assistance to individuals in rural areas to access skill development courses and training programs.</p>

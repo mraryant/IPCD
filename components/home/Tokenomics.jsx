@@ -155,7 +155,7 @@ const Tokenomics = () => {
                             </div>
                             <div className="flex w-[100%]   flex-col justify-between p-4 leading-normal">
 
-                                <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> REVENUE STREAM</h5>
+                                <h5 className="mb-2 text-3xl font-bold tracking-tight   text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> REVENUE STREAM</h5>
                                 <p className=' leading-tight'> {"➣"} Subscription from User/Companies/Institution.</p>
                                 <p className=' leading-tight'> {"➣"} Premium features through subscription.</p>
                                 <p className=' leading-tight'> {"➣"} Licensing fees for educational institutions & Companies.</p>
