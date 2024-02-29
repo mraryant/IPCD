@@ -7,7 +7,8 @@ import { useAnimate, stagger } from "framer-motion"
 import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Popup1 from "../popup1";
+import Popup1 from "./Popup1";
+ 
 
 
 
