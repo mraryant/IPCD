@@ -142,7 +142,7 @@ const Tokenomics = () => {
 
                     </div>
                     <div id="benifit-container" className='flex    flex-col gap-5   z-[1] w-full  '>
-                        <div id='carde' class="flex p-5 flex-col items-center   rounded-lg shadow md:flex-row md:max-w-4xl  ">
+                        <div id='carde' class="flex   flex-col items-center   rounded-lg shadow md:flex-row md:max-w-4xl  ">
 
                             <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden">
                                 <Image

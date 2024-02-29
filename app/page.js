@@ -11,7 +11,7 @@ import Listing from "@/components/home/Listing";
 import Footer from "@/components/Footer";
 import Headroom from "react-headroom";
 import Navbar from "@/components/Navbar";
-import Benifits from "@/components/home/Benifits";
+
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       <Contract />
       <Usecase />
       <Roadmap />
-     
+
       <Footer />
 
 
