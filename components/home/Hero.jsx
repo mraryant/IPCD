@@ -69,11 +69,11 @@ const Hero = () => {
 
   const [popup, setpopup] = useState('false');
 
-  useEffect(() => {
-    setTimeout(() => {
-      setpopup('True')
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setpopup('True')
+  //   }, 5000);
+  // }, []);
 
   const handlepopup = (state) => {
     if (state === 'true') {
@@ -121,7 +121,7 @@ const Hero = () => {
               ))}
             </motion.p>
             <div className=" relative">
-              <div style={{ display: popup === 'false' ? 'block' : 'none' }} className="  absolute z-10 top-[48%] left-[45%] transform -translate-x-1/2 -translate-y-1/2   max-w-[700px] max-[768px]:w-[90%] max-[768px]:top-[160%]  max-[768px]:transform max-[768px]:-translate-x-0 max-[768px]:-translate-y-0 max-[768px]:left-0" >
+              <div style={{ display: popup === 'true' ? 'block' : 'none' }} className="  absolute z-10 top-[48%] left-[45%] transform -translate-x-1/2 -translate-y-1/2   max-w-[700px] max-[768px]:w-[90%] max-[768px]:top-[160%]  max-[768px]:transform max-[768px]:-translate-x-0 max-[768px]:-translate-y-0 max-[768px]:left-0" >
                 <Popup1 />
               </div>
               <span onClick={() => { handlepopup(popup) }} className=" text-blue-400 cursor-pointer "> READ MORE</span>
