@@ -73,35 +73,72 @@ const Navbar = () => {
             className={`items-center justify-between  w-full md:flex md:w-auto md:order-1 ${isNavVisible ? 'block' : 'hidden'
               }`}
           >
-            <ul className=" navcar  flex    flex-col p-4   md:py-1.5   mt-4 font-medium border border-gray-100 md:rounded-[50px] rounded-lg bg-gray-50 md:space-x-[4vmax] rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-900 md:dark:bg-white md:text-black dark:border-gray-700">
+            <ul className=" navcar  flex    flex-col p-4   md:py-1.5   mt-4 font-medium border border-gray-100 md:rounded-[50px] rounded-lg bg-gray-50 md:space-x-[1vmax] rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-900   md:dark:bg-transparent md:text-black dark:border-gray-700">
               {/* <li>
                 <Link href="#">
                   <div className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</div>
                 </Link>
               </li> */}
-              <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
+              <li className=' btn1 md:border-none border-b-[1px] border-[#F7A00B] '>
                 <Link href="#hero-main">
-                  <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</div>
+                  <div className=" flex gap-2 font-semibold  py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home
+                    <Image
+                      src="/assets/singlearr.svg"
+                      width={15}
+                      height={15}
+                      alt=">>"
+                    />
+                  </div>
                 </Link>
               </li>
-              <li className='md:border-none border-b-[1px] border-[#F7A00B]'>
+              <li className=' btn1 md:border-none border-b-[1px] border-[#F7A00B]'>
                 <Link href="#about-main">
-                  <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</div>
+                  <div className=" flex gap-2 font-semibold   py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us
+
+                    <Image
+                      src="/assets/singlearr.svg"
+                      width={15}
+                      height={15}
+                      alt=">>"
+                    />
+
+                  </div>
                 </Link>
               </li>
-              <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
+              <li className=' w-[100vmax] btn1  md:border-none border-b-[1px] border-[#F7A00B] '>
                 <Link href="#Usecase-main">
-                  <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Use Case</div>
+                  <div className=" flex gap-2 font-semibold  py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Use Case
+                    <Image
+                      src="/assets/singlearr.svg"
+                      width={15}
+                      height={15}
+                      alt=">>"
+                    />
+                  </div>
                 </Link>
               </li>
-              <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
+              <li className=' btn1 md:border-none border-b-[1px] border-[#F7A00B] '>
                 <Link href="#roadmap-main">
-                  <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Roadmap</div>
+                  <div className=" flex gap-2 font-semibold  py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Roadmap
+                    <Image
+                      src="/assets/singlearr.svg"
+                      width={15}
+                      height={15}
+                      alt=">>"
+                    />
+                  </div>
                 </Link>
               </li>
-              <li className='md:border-none border-b-[1px] border-[#F7A00B] '>
+              <li className=' btn1 md:border-none border-b-[1px] border-[#F7A00B] '>
                 <Link href="#toko-main">
-                  <div className=" font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[--prime-yellow] dark:text-white md:dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tokenomics</div>
+                  <div className=" flex gap-1 font-semibold  py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  dark:text-white md:dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tokenomics
+                    <Image
+                      src="/assets/singlearr.svg"
+                      width={15}
+                      height={15}
+                      alt=">>"
+                    />
+                  </div>
                 </Link>
               </li>
             </ul>

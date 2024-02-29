@@ -78,9 +78,9 @@ const Roadmap = () => {
 
                 <div id="benifit-container" className='flex gap-5'>
 
-                    <div id='carde' class="flex p-5 flex-col items-center      rounded-lg shadow md:flex-row md:max-w-6xl ">
+                    <div id='carde' className="flex p-5 flex-col items-center      rounded-lg shadow md:flex-row md:max-w-6xl ">
 
-                        <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg  max-[768px]:hidden ">
+                        <div className="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg  max-[768px]:hidden ">
                             <Image
                                 src="/assets/logo_arro.svg"
                                 width={100}
@@ -88,9 +88,9 @@ const Roadmap = () => {
                                 alt='skdj'
                             />
                         </div>
-                        <div class="flex w-full flex-col justify-between p-4 leading-normal gap-2">
+                        <div className="flex w-full flex-col justify-between p-4 leading-normal gap-2">
 
-                            <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> CSR </h5>
+                            <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> CSR </h5>
                             <p className=' leading-tight' > {"➣"} Collaborating with local educational institutions and industry partners to create apprenticeship opportunities for hands-on skill development.</p>
 
                             <p className=' leading-tight' > {"➣"} Offering scholarships or financial assistance to individuals in rural areas to access skill development courses and training programs.</p>

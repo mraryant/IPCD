@@ -142,9 +142,9 @@ const Tokenomics = () => {
 
                     </div>
                     <div id="benifit-container" className='flex    flex-col gap-5   z-[1] w-full  '>
-                        <div id='carde' class="flex   flex-col items-center   rounded-lg shadow md:flex-row md:max-w-4xl  ">
+                        <div id='carde' className="flex   flex-col items-center   rounded-lg shadow md:flex-row md:max-w-4xl  ">
 
-                            <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden">
+                            <div className="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden">
                                 <Image
                                     src="/assets/logo_arro.svg"
                                     width={100}
@@ -152,9 +152,9 @@ const Tokenomics = () => {
                                     alt='skdj'
                                 />
                             </div>
-                            <div class="flex w-[100%]   flex-col justify-between p-4 leading-normal">
+                            <div className="flex w-[100%]   flex-col justify-between p-4 leading-normal">
 
-                                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> REVENUE STREAM</h5>
+                                <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> REVENUE STREAM</h5>
                                 <p className=' leading-tight'> {"➣"} Subscription from User/Companies/Institution.</p>
                                 <p className=' leading-tight'> {"➣"} Premium features through subscription.</p>
                                 <p className=' leading-tight'> {"➣"} Licensing fees for educational institutions & Companies.</p>
