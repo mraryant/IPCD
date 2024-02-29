@@ -1,6 +1,8 @@
 import React from 'react'
 import Tokenomics from './Tokenomics'
 import Listing from './Listing'
+import Benifits from './Benifits'
+import Image from 'next/image'
 
 const Roadmap = () => {
     return (
@@ -73,6 +75,33 @@ const Roadmap = () => {
                     </div>
                 </div>
 
+
+                <div id="benifit-container" className='flex gap-5'>
+
+                    <div id='carde' class="flex p-5 flex-col items-center      rounded-lg shadow md:flex-row md:max-w-6xl ">
+
+                        <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg  max-[768px]:hidden ">
+                            <Image
+                                src="/assets/logo_arro.svg"
+                                width={100}
+                                height={100}
+                                alt='skdj'
+                            />
+                        </div>
+                        <div class="flex w-full flex-col justify-between p-4 leading-normal gap-2">
+
+                            <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> CSR </h5>
+                            <p className=' leading-tight' > {"➣"} Collaborating with local educational institutions and industry partners to create apprenticeship opportunities for hands-on skill development.</p>
+
+                            <p className=' leading-tight' > {"➣"} Offering scholarships or financial assistance to individuals in rural areas to access skill development courses and training programs.</p>
+                            <p className=' leading-tight' > {"➣"} Providing access to online learning platforms and resources for skill development in remote areas with limited educational infrastructure.</p>
+                            <p className=' leading-tight' > {"➣"} Partnering with government agencies and non-profit organizations to implement sustainable skill development projects in rural communities.</p>
+                            <p className=' leading-tight' > {"➣"} Conducting regular assessments and evaluations to measure the impact of CSR activities on skill development and adjust strategies accordingly for continuous improvement.</p>
+
+                        </div>
+                    </div>
+
+                </div>
 
                 <Tokenomics />
                 <Listing />

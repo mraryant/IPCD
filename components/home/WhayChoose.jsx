@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion"
+import Image from 'next/image';
 const WhayChoose = () => {
     const syncVar = {
         hidden: { opacity: 0, x: -30, y: -30 },
@@ -38,7 +39,7 @@ const WhayChoose = () => {
                     <motion.div id="whayC-cont-mid"
                         initial={{ scale: 1.9 }}
                         whileInView={{ scale: 1, transition: { delay: 0.4, duration: 1 }, }}
-                         className='w-[30%] overflow-hidden flex max-[834px]:w-[100%] '>
+                        className='w-[30%] overflow-hidden flex max-[834px]:w-[100%] '>
                         <video className="    filter grayscale  scale-[2.2] max-[834px]:scale-[1.2] " autoPlay muted loop src={require('../../public/assets/whayCvid.mp4')} />
 
                     </motion.div>
@@ -64,6 +65,116 @@ const WhayChoose = () => {
                     </div>
                 </div>
 
+                <div id="benifit-container" className='flex  flex-col gap-5 items-center   '>
+                    <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">BENEFIT BY <span className='text-[var(--prime-yellow)]' >IPCD</span></h5>
+
+                    <div id="card-container" className='flex   gap-5 max-[453px]:flex-col '>
+
+                        <div id='carde' class="flex p-5 pr-0 flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden ">
+                                <Image
+                                    src="/assets/logo_arro.svg"
+                                    width={100}
+                                    height={100}
+                                    alt='skdj'
+                                />
+                            </div>
+                            <div class="flex w-full flex-col justify-between p-4 leading-normal">
+                                {/* <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">BENEFIT BY <span className='text-[var(--prime-yellow)]' >IPCD</span></h5> */}
+                                <h5 class="mb-2 oxanium text-3xl font-bold tracking-tight text-gray-900 dark:text-white"><span className='text-[var(--prime-yellow)]' >Corporate</span>   / Institute</h5>
+                                <p> {"➣"} Enhanced Scalability </p>
+                                <p> {"➣"} Higher flexibility  </p>
+                                <p> {"➣"} Customized Solution  </p>
+                                <p> {"➣"} Yearly Renewed  </p>
+                                <p> {"➣"} Advertising Platform  </p>
+                            </div>
+                        </div>
+
+                        <div id='carde' class="flex p-5 flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+
+                            <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden">
+                                <Image
+                                    src="/assets/logo_arro.svg"
+                                    width={100}
+                                    height={100}
+                                    alt='skdj'
+                                />
+                            </div>
+                            <div class="flex w-full flex-col justify-between p-4 leading-normal">
+                                {/* <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white oxanium ">BENEFIT BY <span className='text-[var(--prime-yellow)]' >IPCD</span></h5> */}
+                                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]' >User</span> / Individual</h5>
+                                <p> {"➣"} Cost- efficiency  </p>
+                                <p> {"➣"} Low Risk   </p>
+                                <p> {"➣"} Customized Solution  </p>
+                                <p> {"➣"} User Friendly </p>
+                                <p> {"➣"} Flexible Plan </p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div id="benifit-container" className='flex  flex-col gap-5 items-center  max-[1050px]:w-[80%] max-[500px]:w-[100%]  '>
+                    {/* <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">BENEFIT BY <span className='text-[var(--prime-yellow)]' >IPCD</span></h5> */}
+
+                    <div id="card-container" className='flex    gap-5 max-[1050px]:flex-col max-[1050px]:gap-0 max-[1050px]:w-[100%]'>
+
+                        <div id='carde' class="flex p-5 flex-col items-center  rounded-lg shadow md:flex-row md:max-w-4xl   ">
+
+                            <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden">
+                                <Image
+                                    src="/assets/logo_arro.svg"
+                                    width={100}
+                                    height={100}
+                                    alt='skdj'
+                                />
+                            </div>
+                            <div class="flex w-full flex-col justify-between p-4 leading-normal">
+
+                                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span>  Platform enables our user to</h5>
+                                <p>{"➣"}  SAVE EFFORT - By accessing integrated network .  </p>
+                                <p> {"➣"}  SAVE MONEY – By choosing customized requirement  </p>
+                                <p>{"➣"} SAVE TIME - Protect & easily transfer Transaction and important document through blockchain technology. </p>
+                                <p>{"➣"}   GROW QUICK – Data based, AI Recommended solution  </p>
+                            </div>
+                        </div>
+
+                        <div id='carde' class="flex p-5 flex-col items-center   rounded-lg shadow md:flex-row md:max-w-4xl ">
+
+                            <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden">
+                                <Image
+                                    src="/assets/logo_arro.svg"
+                                    width={100}
+                                    height={100}
+                                    alt='skdj'
+                                />
+                            </div>
+                            <div class="flex w-full flex-col justify-between p-4 leading-normal">
+
+                                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> Key Partner</h5>
+                                <p>{"➣"} HR Professional</p>
+                                <p>{"➣"} Recruitment Expert</p>
+                                <p>{"➣"} Professional Expertise</p>
+                                <p>{"➣"} Universities</p>
+                                <p>{"➣"} Education Institution</p>
+                                <p>{"➣"} Government Bodies</p>
+                                <p>{"➣"} Companies</p>
+                                <p>{"➣"} Regulatory Bodies</p>
+                                <p>{"➣"} Financial Institution</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
             </div >
 
         </>

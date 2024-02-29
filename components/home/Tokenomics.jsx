@@ -141,7 +141,34 @@ const Tokenomics = () => {
                         </div>
 
                     </div>
+                    <div id="benifit-container" className='flex    flex-col gap-5   z-[1] w-full  '>
+                        <div id='carde' class="flex p-5 flex-col items-center   rounded-lg shadow md:flex-row md:max-w-4xl  ">
+
+                            <div class="object-cover w-fit rounded-t-lg h-96 md:h-auto md:w-38 md:rounded-none md:rounded-s-lg max-[768px]:hidden">
+                                <Image
+                                    src="/assets/logo_arro.svg"
+                                    width={100}
+                                    height={100}
+                                    alt='skdj'
+                                />
+                            </div>
+                            <div class="flex w-[100%]   flex-col justify-between p-4 leading-normal">
+
+                                <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white oxanium"><span className='text-[var(--prime-yellow)]'>IPCD</span> REVENUE STREAM</h5>
+                                <p className=' leading-tight'> {"➣"} Subscription from User/Companies/Institution.</p>
+                                <p className=' leading-tight'> {"➣"} Premium features through subscription.</p>
+                                <p className=' leading-tight'> {"➣"} Licensing fees for educational institutions & Companies.</p>
+                                <p className=' leading-tight'> {"➣"} In-app advertisements from relevant educational service providers and hiring companies.</p>
+                                <p className=' leading-tight'> {"➣"} Partnership with universities for featured listing and targeted advertising.</p>
+                                <p className=' leading-tight'> {"➣"} Data licensing.</p>
+                                <p className=' leading-tight'> {"➣"} Commission for facilitating transactions between users and companies.</p>
+                                <p className=' leading-tight'> {"➣"} In-app advertisements from relevant service providers.</p>
+                                <p className=' leading-tight'> {"➣"} Partnership with other platforms or services.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div >
         </>
     )

@@ -25,7 +25,7 @@ export default function Home() {
       <Contract />
       <Usecase />
       <Roadmap />
-      <Benifits />
+     
       <Footer />
 
 

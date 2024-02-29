@@ -85,7 +85,7 @@ const Hero = () => {
 
   return (
     <>
-      <motion.div id="hero-main" className=" overflow-hidden relative min-h-[100vh] w-[100vw] flex justify-center items-center px-4 mt-[-88px] pb-20 md:px-8 max-[768px]:flex-col">
+      <motion.div id="hero-main"   className=" overflow-hidden relative min-h-[100vh] w-[100vw] flex justify-center items-center px-4 mt-[-88px] pb-20 md:px-8 max-[768px]:flex-col">
         <div className="  absolute left-0 bottom-0 bg-gradient-to-t from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-[100%] h-[100px]  bottom-0 z-3"></div>
 
         {/* <video className=" w-screen  absolute left-0  h-[1100%] z-0 object-cover flex  opacity-30 max-[900px]:h-[200%] max-[500px]:h-[100%] " autoPlay muted loop src={require('../../public/assets/tokovideo.mp4')} /> */}
@@ -119,12 +119,14 @@ const Hero = () => {
                 </motion.span>
               ))}
             </motion.p>
+
             <div className=" relative">
               <div style={{ display: popup === 'false' ? 'block' : 'none' }} className="  absolute z-10 top-[48%] left-[45%] transform -translate-x-1/2 -translate-y-1/2   max-w-[700px] max-[768px]:w-[90%] max-[768px]:top-[160%]  max-[768px]:transform max-[768px]:-translate-x-0 max-[768px]:-translate-y-0 max-[768px]:left-0" >
                 <Popup1 />
               </div>
               <span onClick={() => { handlepopup(popup) }} className=" text-blue-400 cursor-pointer "> READ MORE</span>
             </div>
+
           </div>
 
           <div id="hero-left-bottom" className="flex ">
