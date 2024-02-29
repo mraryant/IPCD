@@ -91,14 +91,15 @@ const Tokenomics = () => {
                                         alt="Picture of the author"
                                     />
                                 </motion.div>
-                                <motion.div variants={childVariants}>
+
+                                {/* <motion.div variants={childVariants}>
                                     <Image
                                         src="/assets/toko5.svg"
                                         width={100}
                                         height={100}
                                         alt="Picture of the author"
                                     />
-                                </motion.div>
+                                </motion.div> */}
                             </motion.div>
                             <h1 className=' gradient-distribution text-4xl ml-10 tracking-[1.3vw] oxanium max-[400px]:text-2xl max-[400px]:ml-[0rem]  max-[900px]:tracking-[2.5vw] max-[900px]:text-3xl max-[900px]:ml-[0px] '>DISTRIBUTION</h1>
                             {/* <h1 className='text-4xl ml-10 tracking-[1.3vw] max-w-[400px]:text-2xl max-w-[400px]:ml-0 max-w-[900px]:tracking-[3vw] max-w-[900px]:text-3xl max-w-[900px]:ml-0'>DISTRIBUTION</h1> */}
