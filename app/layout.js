@@ -1,7 +1,9 @@
 
 // import Navbar from "@/components/Navbar";
+import { Suspense } from "react";
 import "./globals.css";
 import { Oxanium, Montserrat } from 'next/font/google';
+import Loading from "./loading"
 // import Headroom from "react-headroom";
 
 const oxanium = Oxanium({
@@ -28,7 +30,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${oxanium.variable} ${montserrat.variable}`} >
 
-        {children}
+        <Suspense fallback={<Loading/>}>
+
+          {children}
+        </Suspense>
 
       </body>
     </html>

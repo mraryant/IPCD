@@ -58,7 +58,7 @@ const Tokenomics = () => {
                                 id="toko-left-images" className='flex reletive cover-fit  gap-[2vmax] justify-center items-baseline '>
                                 <motion.div variants={childVariants}>
                                     <Image
-                                        src="/assets/toko1.svg"
+                                        src="/assets/toko1.png"
                                         width="100"
                                         height="100"
                                         alt="Picture of the author"
@@ -67,7 +67,7 @@ const Tokenomics = () => {
                                 </motion.div>
                                 <motion.div variants={childVariants}>
                                     <Image
-                                        src="/assets/toko2.svg"
+                                        src="/assets/toko2.png"
                                         width={100}
                                         height={100}
                                         alt="Picture of the author"
@@ -76,7 +76,7 @@ const Tokenomics = () => {
 
                                 <motion.div variants={childVariants}>
                                     <Image
-                                        src="/assets/toko3.svg"
+                                        src="/assets/toko3.png"
                                         width={100}
                                         height={100}
                                         alt="Picture of the author"
@@ -85,7 +85,7 @@ const Tokenomics = () => {
 
                                 <motion.div variants={childVariants}>
                                     <Image
-                                        src="/assets/toko4.svg"
+                                        src="/assets/toko4.png"
                                         width={100}
                                         height={100}
                                         alt="Picture of the author"

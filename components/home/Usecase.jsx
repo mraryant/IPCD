@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const Usecase = () => {
     const [tooltipVisible, setTooltipVisible] = useState(true);
-    const [tooltipImage, setTooltipImage] = useState("/assets/usecaseDefault.svg");
+    const [tooltipImage, setTooltipImage] = useState("/assets/usecaseDefault.png");
 
 
     const handleMouseEnter = (image) => {
@@ -16,7 +16,7 @@ const Usecase = () => {
 
     const handleMouseLeave = () => {
 
-        setTooltipImage("/assets/usecaseDefault.svg");
+        setTooltipImage("/assets/usecaseDefault.png");
         setTooltipVisible(true);
     };
 
@@ -52,7 +52,7 @@ const Usecase = () => {
                         id="usecase-left" className='w-[70%] flex flex-col gap-7 justify-center items-center relative max-[1000px]:w-[90%]'>
                         <motion.div variants={childVariants}
                             onMouseEnter={() =>
-                                handleMouseEnter("/assets/usecase1.svg") // Set the image path for the first use case
+                                handleMouseEnter("/assets/usecase1.png") // Set the image path for the first use case
                             }
                             onMouseLeave={handleMouseLeave}
                             className=" flex flex-col gap-2 border-b-2 border-white pb-5"
@@ -85,7 +85,7 @@ const Usecase = () => {
 
                         <motion.div variants={childVariants}
                             onMouseEnter={() =>
-                                handleMouseEnter("/assets/usecase4.svg") // Set the image path for the first use case
+                                handleMouseEnter("/assets/usecase4.png") // Set the image path for the first use case
                             }
                             onMouseLeave={handleMouseLeave}
                             className=" flex flex-col gap-2 border-b-2 border-white pb-5"

@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Popup1 from "./Popup1";
- 
+
 
 
 
@@ -152,7 +152,7 @@ const Hero = () => {
         </div>
 
         <div id="hero-right" className="relative   w-[40%] h-[100%] flex justify-center gap-0  max-[850px]:w-[100%]">
-          <div id="hero-right-container" className="  border-2 mt-20 h-[610px] min-w-[260px] max-w-[260px] overflow-hidden rounded-[200px] bg-[url('/assets/heroCapBg.jpg')] bg-cover bg-opacity-80 bg-center">
+          <div id="hero-right-container" className="  border-2 mt-20 h-[610px] min-w-[260px] max-w-[260px] overflow-hidden rounded-[200px] bg-[url('/assets/heroCapBg.png')] bg-cover bg-opacity-80 bg-center">
             <div id="hero-rc-top " className="w-[100%] h-[60%] flex flex-col justify-center items-center gap-4 ">
               <h2 className="oxanium text-justify text-3xl w-[90%] px-4 mt-10" >Get In <span className=" text-[--prime-yellow]"></span>Touch   With <span className=" text-[--prime-yellow]">IPCD</span>  </h2>
 

@@ -19,7 +19,7 @@ const About = () => {
     return (
         <>
             {/* bg-[url('/assets/aboutbg.svg')] */}
-            <div id="about-main" className=" relative flex justify-center py-20 min-h-[100vh] gap-10 w-[100vw] bg-[url('/assets/aboutbg.svg')]  overflow-hidden max-[850px]:flex-col max-[850px]:items-center " >
+            <div id="about-main" className=" relative flex justify-center py-20 min-h-[100vh] gap-10 w-[100vw] bg-[url('/assets/aboutbg.png')]  overflow-hidden max-[850px]:flex-col max-[850px]:items-center " >
 
                 <div className="  absolute left-0 top-0 bg-gradient-to-b from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-screen h-[100px]  bottom-0 z-3"></div>
                 <div className="  absolute left-0 bottom-0 bg-gradient-to-t from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-screen h-[100px]  bottom-0 z-3"></div>
@@ -27,7 +27,7 @@ const About = () => {
 
                 <div id="about-left" className=' flex justify-center items-center h-[90%] w-[40%] max-[850px]:w-[80%] max-[500px]:w-[90%]'>
                     <Image
-                        src=" /assets/about-img.svg"
+                        src="/assets/about-img.png"
                         width={600}
                         height={600}
                         alt="Picture of the author"
