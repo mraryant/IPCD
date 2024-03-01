@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Contract = () => {
     const [copied, setCopied] = useState(false);
-    const text = "0xc755377CD13ca4BedB87EED8D2C5105d46FFC388";
+    const text = "0xc755377CD13ca4BedB87EED8D2C5105d46FFC3";
 
     const handleCopy = () => {
         navigator.clipboard
@@ -69,7 +69,7 @@ const Contract = () => {
                             style={{ width: "230px" }}
                             onClick={() =>
                                 window.open(
-                                    "https://bscscan.com/address/0xc755377CD13ca4BedB87EED8D2C5105d46FFC388",
+                                    "#",
                                     "_blank"
                                 )
                             }

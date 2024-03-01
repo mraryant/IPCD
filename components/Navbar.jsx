@@ -42,7 +42,7 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" className="btn oxanium text-white   font-medium   text-sm     bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">Buy Token</button>
+            <a href="https://presale.ipcd.in/" target='blank' > <button type="button" className="btn oxanium text-white   font-medium   text-sm     bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">Buy Token</button></a>
             <button
               onClick={toggleNav}
               type="button"

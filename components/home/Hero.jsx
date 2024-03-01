@@ -141,7 +141,7 @@ const Hero = () => {
                 variants={staggerVariants}
 
                 id="hero-bottom-buttons" className="flex  gap-4 max-[480px]:flex-wrap max-[468px]:justify-center ">
-                <motion.button variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy Token</motion.button>
+                <a href="https://presale.ipcd.in/" target='blank' ><motion.button variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buy Token</motion.button></a>
                 <motion.button onClick={openPDF} variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">White Paper</motion.button>
                 <motion.a href="#contract1" variants={childVariants} type="button" className=" oxanium btn text-white   font-medium   text-sm     dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  max-[468px]:hidden">Contract</motion.a>
 
